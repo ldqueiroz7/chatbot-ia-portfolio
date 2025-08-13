@@ -1,4 +1,4 @@
-# Agora as chaves são um conjunto de palavras-chave para cada resposta.
+# As chaves são um conjunto de palavras-chave para cada resposta.
 BASE_DE_CONHECIMENTO = {
     # === CONHECIMENTO DO SISTEMA DE LIMPEZA ===
     ("iniciar", "começar", "abrir"): 
