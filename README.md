@@ -15,7 +15,7 @@ Este projeto é um chatbot de linha de comando desenvolvido em Python, projetado
 - Python 3
 - Git e GitHub para versionamento de código
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como iniciei o Projeto
 
 1.  **Clone o Repositório:**
     ```bash
