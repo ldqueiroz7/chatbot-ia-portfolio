@@ -28,3 +28,389 @@
 [2025-08-14 00:34:13] Você: Olá
 [2025-08-14 00:34:13] Assistente: Desculpe, não encontrei informações sobre isso.
 ---
+[2025-08-14 00:45:57] Você: Olá
+[2025-08-14 00:45:57] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 00:46:03] Você: cono inicia limpesa
+[2025-08-14 00:46:03] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 00:46:09] Você: Não
+[2025-08-14 00:46:09] Assistente: Ok! Estou por aqui se precisar de algo mais.
+---
+[2025-08-14 00:46:14] Você: Obrigado
+[2025-08-14 00:46:14] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 00:49:28] Você: Como inicia a limpesa
+[2025-08-14 00:49:28] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar. Aqui estão as informações que você pediu:
+
+Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 00:49:33] Você: Sim
+[2025-08-14 00:49:33] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 00:49:40] Você: Como finalizar uma limpesa
+[2025-08-14 00:49:40] Assistente: Importante: Só vá para a aba 'Finalizar Limpeza' e finalize o quarto APÓS ter terminado todo o serviço de limpeza física. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 00:50:00] Você: passo a passo
+[2025-08-14 00:50:00] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 00:50:06] Você: passo a passo
+[2025-08-14 00:50:06] Assistente: Claro. Temos o processo de 'iniciar' uma limpeza e o de 'finalizar'. Sobre qual deles você quer saber?
+---
+[2025-08-14 00:50:12] Você: os dois
+[2025-08-14 00:50:12] Assistente: Não entendi sua escolha. Por favor, diga 'iniciar' ou 'finalizar'.
+---
+[2025-08-14 01:06:53] Você: Olá
+[2025-08-14 01:06:53] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 01:06:58] Você: Como iniciar
+[2025-08-14 01:06:58] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:07:07] Você: Passo a passo
+[2025-08-14 01:07:07] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 01:07:11] Você: passo a passo
+[2025-08-14 01:07:11] Assistente: Claro. Temos o processo de 'iniciar' uma limpeza e o de 'finalizar'. Sobre qual deles você quer saber?
+---
+[2025-08-14 01:09:45] Você: Olá
+[2025-08-14 01:09:45] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 01:09:48] Você: os dois
+[2025-08-14 01:09:48] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 01:09:56] Você: passo a passo iniciar e finalziar
+[2025-08-14 01:09:56] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:17:01] Você: oi
+[2025-08-14 01:17:01] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar. Aqui estão as informações que você pediu:
+
+Olá! Sou o assistente de suporte. Como posso te ajudar hoje? Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:19:24] Você: Olá
+[2025-08-14 01:19:24] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje? Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:19:26] Você: Pode
+[2025-08-14 01:19:26] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 01:19:41] Você: Gostaria de saber como iniciar e finalziar uma limpesa
+[2025-08-14 01:19:41] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:38:06] Você: qual o procedimento todo de higienização?
+[2025-08-14 01:38:06] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:38:19] Você: Como começar uma limpeza
+[2025-08-14 01:38:19] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:38:30] Você: como encerrar limpeza
+[2025-08-14 01:38:30] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:40:56] Você: Olá
+[2025-08-14 01:40:56] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 01:41:08] Você: como começar a utilizar o tablet
+[2025-08-14 01:41:08] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:41:15] Você: Como começar limpeza
+[2025-08-14 01:41:15] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:41:21] Você: como encerrar 
+[2025-08-14 01:41:21] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 01:43:42] Você: Olá
+[2025-08-14 01:43:42] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 01:43:49] Você: como começar a usar o tablet?
+[2025-08-14 01:43:49] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 01:43:57] Você: para iniciar e finalizar
+[2025-08-14 01:43:57] Assistente: Ok! Estou por aqui se precisar de algo mais.
+---
+[2025-08-14 01:44:02] Você: para iniciar e finalizar
+[2025-08-14 01:44:02] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:06:36] Você: Olá
+[2025-08-14 02:06:36] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 02:07:03] Você: Como usar o tablet
+[2025-08-14 02:07:03] Assistente: Desculpe, não tenho certeza de como ajudar com isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 02:07:55] Você: Como iniciar uma limpeza?
+[2025-08-14 02:07:55] Assistente: Claro. Temos o processo de 'iniciar' uma limpeza e o de 'finalizar'. Sobre qual deles você quer saber?
+---
+[2025-08-14 02:08:57] Você: Iniciar
+[2025-08-14 02:08:57] Assistente: Não entendi sua escolha. Por favor, diga 'iniciar' ou 'finalizar'. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:14:42] Você: Olá
+[2025-08-14 02:14:42] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 02:14:53] Você: Preciso de ajuda para iniciar e finalizar uma limpeza
+[2025-08-14 02:14:53] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:14:58] Você: e para finalizar?
+[2025-08-14 02:14:58] Assistente: Ok! Estou por aqui se precisar de algo mais.
+---
+[2025-08-14 02:15:03] Você: e para finalizar?
+[2025-08-14 02:15:03] Assistente: Importante: Só vá para a aba 'Finalizar Limpeza' e finalize o quarto APÓS ter terminado todo o serviço de limpeza física. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:15:47] Você: qual a politica da firma para descanso?
+[2025-08-14 02:15:47] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 02:16:04] Você: qual a politica da firma para descanso?
+[2025-08-14 02:16:04] Assistente: Claro. Temos o processo de 'iniciar' uma limpeza e o de 'finalizar'. Sobre qual deles você quer saber?
+---
+[2025-08-14 02:20:04] Você: Olá
+[2025-08-14 02:20:04] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 02:20:15] Você: Passo a passo inicio e fim de limpeza
+[2025-08-14 02:20:15] Assistente: Sem problemas, aqui está o guia completo do processo de limpeza:
+
+**Passo 1: Login**
+...
+**Passo 2: Iniciar**
+...
+**Passo 3: Limpeza**
+...
+**Passo 4: Finalizar**
+... Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:20:29] Você: explique o passo 1
+[2025-08-14 02:20:29] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 02:20:35] Você: explique o passo 1
+[2025-08-14 02:20:35] Assistente: Sem problemas, aqui está o guia completo do processo de limpeza:
+
+**Passo 1: Login**
+...
+**Passo 2: Iniciar**
+...
+**Passo 3: Limpeza**
+...
+**Passo 4: Finalizar**
+... Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:20:39] Você: férias
+[2025-08-14 02:20:39] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 02:20:43] Você: férias
+[2025-08-14 02:20:43] Assistente: Dúvidas sobre férias devem ser realizadas diretamente com a encarregada geral e o departamento de Recursos Humanos. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:21:15] Você: como começar a usar o tablet?
+[2025-08-14 02:21:15] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 02:21:17] Você: como começar a usar o tablet?
+[2025-08-14 02:21:17] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:22:03] Você: iniciar
+[2025-08-14 02:22:03] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:26:46] Você: Olá
+[2025-08-14 02:26:46] Assistente: Olá! Sou o assistente de suporte. Como posso te ajudar hoje?
+---
+[2025-08-14 02:26:50] Você: Iniciar limpeza
+[2025-08-14 02:26:50] Assistente: **Passo 2: Iniciar a Limpeza no App**
+Acesse o seu setor, encontre o leito que irá limpar e clique em 'Iniciar Leito'. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:27:01] Você: Qual o primeiro passo?
+[2025-08-14 02:27:01] Assistente: Certo! O que mais você gostaria de saber?
+---
+[2025-08-14 02:27:07] Você: Qual o primeiro passo?
+[2025-08-14 02:27:07] Assistente: **Passo 1: Login**
+Primeiro, acesse o aplicativo 'Higienização de Leitos' e faça o login com seu usuário e senha. Posso ajudar com mais alguma coisa?
+---
+[2025-08-14 02:27:25] Você: Como finalizar
+[2025-08-14 02:27:25] Assistente: Ok! Estou por aqui se precisar de algo mais.
+---
+[2025-08-14 02:30:01] Você: Olá
+[2025-08-14 02:30:01] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte. Como posso te ajudar?
+---
+[2025-08-14 02:30:17] Você: Como iniciar e finalizar limpeza no tablet?
+[2025-08-14 02:30:17] Assistente: Guia completo do processo de limpeza:
+
+**Passo 1: Login**
+Acesse o app 'Higienização de Leitos' e faça o login.
+
+**Passo 2: Iniciar**
+No seu setor, encontre o leito e clique em 'Iniciar Leito'.
+
+**Passo 3: Limpeza Física**
+Execute todo o procedimento de higienização do quarto.
+
+**Passo 4: Finalizar**
+APÓS terminar, volte ao app e clique em 'Finalizar Limpeza'.
+---
+[2025-08-14 02:30:41] Você: Férias
+[2025-08-14 02:30:41] Assistente: Dúvidas sobre férias devem ser realizadas diretamente com a encarregada geral e o departamento de Recursos Humanos.
+---
+[2025-08-14 02:30:56] Você: como saber meu login
+[2025-08-14 02:30:56] Assistente: **Passo 1: Login**
+Primeiro, acesse o aplicativo 'Higienização de Leitos' e faça o login com seu usuário e senha.
+---
+[2025-08-14 02:31:15] Você: não entendi
+[2025-08-14 02:31:15] Assistente: Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 02:35:00] Você: OII
+[2025-08-14 02:35:00] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte. Como posso te ajudar?
+---
+[2025-08-14 02:35:11] Você: Passo a passo tablet
+[2025-08-14 02:35:11] Assistente: Guia completo do processo de limpeza:
+
+**Passo 1: Login**
+Acesse o app 'Higienização de Leitos' e faça o login.
+
+**Passo 2: Iniciar**
+No seu setor, encontre o leito e clique em 'Iniciar Leito'.
+
+**Passo 3: Limpeza Física**
+Execute todo o procedimento de higienização do quarto.
+
+**Passo 4: Finalizar**
+APÓS terminar, volte ao app e clique em 'Finalizar Limpeza'.
+---
+[2025-08-14 02:35:17] Você: login
+[2025-08-14 02:35:17] Assistente: **Passo 1: Login**
+Primeiro, acesse o aplicativo 'Higienização de Leitos' e faça o login com seu usuário e senha. Composto por seu nome abreviado e apenas último nome completo e senha padrão do 1 ao 9. **Exemplo**: João Maria da Silva = Usuário JMSILVA Senha 12345679
+---
+[2025-08-14 02:37:09] Você: Olá
+[2025-08-14 02:37:09] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte. Como posso te ajudar?
+---
+[2025-08-14 02:37:16] Você: Passo a passo tablet
+[2025-08-14 02:37:16] Assistente: Guia completo do processo de limpeza:
+
+**Passo 1: Login**
+Acesse o app 'Higienização de Leitos' e faça o login.
+
+**Passo 2: Iniciar**
+No seu setor, encontre o leito e clique em 'Iniciar Leito'.
+
+**Passo 3: Limpeza Física**
+Execute todo o procedimento de higienização do quarto.
+
+**Passo 4: Finalizar**
+APÓS terminar, volte ao app e clique em 'Finalizar Limpeza'.
+---
+[2025-08-14 02:37:38] Você: passo 4
+[2025-08-14 02:37:38] Assistente: **Passo 4: Finalizar a Limpeza no App**
+Clique na aba superior onde está escrito 'Aguardando Limpeza' e mude para 'Em Limpeza', dessa forma exibirá todas as limpezas iniciadas no seu mobile. Atenção: APENAS APÓS terminar a limpeza física, volte ao aplicativo e clique em 'Finalizar Limpeza'.
+---
+[2025-08-14 02:48:26] Você: Olá
+[2025-08-14 02:48:26] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 02:48:47] Você: Limpeza terminal
+[2025-08-14 02:48:47] Assistente: **Limpeza Terminal (Definição ANVISA):**
+
+É uma limpeza **completa e profunda** realizada no quarto **após a desocupação** do leito (por alta, transferência ou óbito do paciente).
+
+**Objetivo:** Desinfetar **todas** as superfícies do ambiente (piso, paredes, janelas, teto, banheiro, mobiliário) para quebrar a cadeia de infecção e preparar o quarto de forma segura para o próximo paciente. É um procedimento muito mais abrangente que a limpeza concorrente.
+---
+[2025-08-14 02:49:12] Você: Limpeza concorrente
+[2025-08-14 02:49:12] Assistente: Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 02:49:20] Você: Concorrente
+[2025-08-14 02:49:20] Assistente: Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 02:50:09] Você: Limpeza concorrente
+[2025-08-14 02:50:09] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+**Limpeza Concorrente (Definição ANVISA):**
+
+É a limpeza realizada **diariamente** enquanto o leito está **ocupado** por um paciente.
+
+**Objetivo:** Manter a higiene do ambiente, remover poeira e sujidades, e controlar a proliferação de microrganismos, focando nas superfícies de maior contato (grades da cama, mesa de cabeceira, suporte de soro, etc.). É uma manutenção para o conforto e segurança do paciente durante sua estadia.
+---
+[2025-08-14 02:54:40] Você: Olá
+[2025-08-14 02:54:40] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 02:57:25] Você: Olá
+[2025-08-14 02:57:25] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:01:09] Você: Olá
+[2025-08-14 03:01:09] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:06:04] Você: Olá
+[2025-08-14 03:06:04] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:07:56] Você: Olá
+[2025-08-14 03:07:56] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:11:14] Você: Oi
+[2025-08-14 03:11:14] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:11:44] Você: Olá
+[2025-08-14 03:11:44] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:11:53] Você: Concorrente
+[2025-08-14 03:11:53] Assistente: **Limpeza Concorrente (Definição ANVISA):**
+
+É a limpeza realizada **diariamente** enquanto o leito está **ocupado** por um paciente.
+
+**Objetivo:** Manter a higiene do ambiente, remover poeira e sujidades, e controlar a proliferação de microrganismos, focando nas superfícies de maior contato (grades da cama, mesa de cabeceira, suporte de soro, etc.). É uma manutenção para o conforto e segurança do paciente durante sua estadia.
+---
+[2025-08-14 03:17:05] Você: Olá
+[2025-08-14 03:17:05] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:17:09] Você: Oi
+[2025-08-14 03:17:09] Assistente: Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:17:27] Você: Olá
+[2025-08-14 03:17:27] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:17:45] Você: Oi
+[2025-08-14 03:17:45] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:20:07] Você: Olá
+[2025-08-14 03:20:07] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:20:12] Você: Terminal
+[2025-08-14 03:20:12] Assistente: **Limpeza Terminal (Definição ANVISA):**
+
+É uma limpeza **completa e profunda** realizada no quarto **após a desocupação** do leito (por alta, transferência ou óbito do paciente).
+
+**Objetivo:** Desinfetar **todas** as superfícies do ambiente (piso, paredes, janelas, teto, banheiro, mobiliário) para quebrar a cadeia de infecção e preparar o quarto de forma segura para o próximo paciente. É um procedimento muito mais abrangente que a limpeza concorrente.
+---
+[2025-08-14 03:22:20] Você: Olá
+[2025-08-14 03:22:20] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:23:07] Você: Olá
+[2025-08-14 03:23:07] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
+[2025-08-14 03:23:36] Você: Olá
+[2025-08-14 03:23:36] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
+---
