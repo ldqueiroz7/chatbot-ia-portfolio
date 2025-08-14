@@ -1,0 +1,47 @@
+<ChatMessage@MDCard>:
+    size_hint_y: None
+    height: self.minimum_height
+    padding: "10dp"
+    md_bg_color: app.theme_cls.primary_color if root.is_user else (0.8, 0.8, 0.8, 1)
+    radius: [15, 15, (0, 15)[root.is_user], 15]
+    elevation: 2
+
+    MDLabel:
+        text: root.text
+        size_hint_y: None
+        height: self.texture_size[1]
+        halign: 'right' if root.is_user else 'left'
+        theme_text_color: "Custom"
+        text_color: (1, 1, 1, 1) if root.is_user else (0, 0, 0, 1)
+
+BoxLayout:
+    orientation: 'vertical'
+
+    MDTopAppBar:
+        title: "Assistente de Suporte"
+        elevation: 4
+        md_bg_color: app.theme_cls.primary_color
+
+    ScrollView:
+        id: historico_chat_scroll
+        MDList:
+            id: historico_chat
+            padding: "10dp"
+            spacing: "10dp"
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: "60dp"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTextField:
+            id: caixa_de_texto
+            hint_text: 'Digite sua mensagem...'
+            mode: "fill"
+            on_text_validate: app.enviar_mensagem()
+
+        MDIconButton:
+            icon: 'send'
+            on_press: app.enviar_mensagem()

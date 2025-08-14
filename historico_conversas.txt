@@ -4,3 +4,27 @@
 [2025-08-13 23:47:48] Você: Precio de ajda para entra no sistema
 [2025-08-13 23:47:48] Assistente: Para começar, você precisa acessar o aplicativo 'Higienização de Leitos' localizado no menu inicial do seu tablet e fazer o login no aplicativo com seu usuário e senha, seu usuário é definido pelos seu nome abreviado e apenas o último nome completo e sua senha padrão é 123456789, caso não funcione, falar com sua encarregada.
 ---
+[2025-08-14 00:22:47] Você: Olá
+[2025-08-14 00:22:47] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 00:23:24] Você: como usar o app
+[2025-08-14 00:23:24] Assistente: Claro. Temos o processo de 'iniciar' uma limpeza e o de 'finalizar'. Sobre qual deles você quer saber?
+---
+[2025-08-14 00:23:35] Você: sobre fnializa
+[2025-08-14 00:23:35] Assistente: Importante: Só vá para a aba 'Finalizar Limpeza' e finalize o quarto APÓS ter terminado todo o serviço de limpeza física.
+---
+[2025-08-14 00:25:51] Você: Olá
+[2025-08-14 00:25:51] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 00:26:02] Você: cono incia limpeza
+[2025-08-14 00:26:02] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar.
+---
+[2025-08-14 00:29:51] Você: Olá
+[2025-08-14 00:29:51] Assistente: Desculpe, não encontrei informações sobre isso.
+---
+[2025-08-14 00:30:02] Você: como incia limpeza
+[2025-08-14 00:30:02] Assistente: Para iniciar uma limpeza, faça o login no app 'Higienização de Leitos', acesse o seu setor e clique em 'Iniciar Leito' no quarto que irá limpar.
+---
+[2025-08-14 00:34:13] Você: Olá
+[2025-08-14 00:34:13] Assistente: Desculpe, não encontrei informações sobre isso.
+---
