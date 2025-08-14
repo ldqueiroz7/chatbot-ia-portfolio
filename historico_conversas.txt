@@ -1,0 +1,6 @@
+[2025-08-13 23:47:35] Você: Olá tudo bem?
+[2025-08-13 23:47:35] Assistente: Desculpe, não encontrei informações sobre isso. Tente usar outras palavras.
+---
+[2025-08-13 23:47:48] Você: Precio de ajda para entra no sistema
+[2025-08-13 23:47:48] Assistente: Para começar, você precisa acessar o aplicativo 'Higienização de Leitos' localizado no menu inicial do seu tablet e fazer o login no aplicativo com seu usuário e senha, seu usuário é definido pelos seu nome abreviado e apenas o último nome completo e sua senha padrão é 123456789, caso não funcione, falar com sua encarregada.
+---
