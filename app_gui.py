@@ -1,74 +1,63 @@
 from kivymd.app import MDApp
-from kivy.core.window import Window
 from kivymd.uix.boxlayout import MDBoxLayout
+from kivymd.uix.card import MDCard
 from kivy.clock import Clock
 from kivy.properties import BooleanProperty, StringProperty
 from datetime import datetime
 import cerebro_chatbot
+from kivy.core.window import Window
+import threading
 
-class ChatMessage(MDBoxLayout):
+class ChatMessage(MDCard):
     text = StringProperty('')
     is_user = BooleanProperty(True)
 
 class ChatbotApp(MDApp):
     def build(self):
-        # Configurando o tema do aplicativo
+        Window.clearcolor = (1, 1, 1, 1)
         self.theme_cls.theme_style = "Light"
-        self.theme_cls.primary_palette = "Gray" # MUDANÇA: Cor principal para Cinza
-        self.theme_cls.accent_palette = "Blue"
+        self.theme_cls.primary_palette = "Gray"
         return None
 
     def on_start(self):
-        self.contexto_atual = None
-        self.primeira_mensagem = True
+        # A interface não precisa mais de estado de conversa
+        pass
 
     def enviar_mensagem(self):
         pergunta_usuario = self.root.ids.caixa_de_texto.text
         if not pergunta_usuario: return
         self.adicionar_mensagem(pergunta_usuario, is_user=True)
         self.root.ids.caixa_de_texto.text = ""
-        resposta_final = self.obter_resposta_bot(pergunta_usuario)
+        self.adicionar_mensagem("Pensando...", is_user=False)
+        threading.Thread(target=self.processar_pergunta, args=(pergunta_usuario,)).start()
+
+    def processar_pergunta(self, pergunta_usuario):
+        # A lógica foi extremamente simplificada: apenas chama o orquestrador
+        resposta_final = cerebro_chatbot.gerar_resposta_final(pergunta_usuario)
+        Clock.schedule_once(lambda dt: self.atualizar_chat(resposta_final, pergunta_usuario))
+
+    def atualizar_chat(self, resposta_final, pergunta_usuario):
+        self.root.ids.historico_chat.remove_widget(self.root.ids.historico_chat.children[0])
         self.adicionar_mensagem(resposta_final, is_user=False)
         self.salvar_log(pergunta_usuario, resposta_final)
 
-    def obter_resposta_bot(self, pergunta_usuario):
-        entrada_formatada = pergunta_usuario.lower()
-
-        # Única lógica de contexto que mantivemos
-        if self.contexto_atual and self.contexto_atual['nome'] == "aguardando_processo":
-            resposta_encontrada = cerebro_chatbot.encontrar_melhor_resposta(pergunta_usuario)
-            self.contexto_atual = None # Limpa o contexto imediatamente após o uso
-            
-            if resposta_encontrada and not isinstance(resposta_encontrada, dict):
-                 return resposta_encontrada
-            else: # Se o usuário não respondeu o que era esperado
-                 return "Não entendi sua escolha. Por favor, pergunte sobre 'iniciar' ou 'finalizar' se precisar."
-
-        # Busca principal e direta
-        resposta_encontrada = cerebro_chatbot.encontrar_melhor_resposta(pergunta_usuario)
-
-        if isinstance(resposta_encontrada, dict): # É uma pergunta de contexto
-            self.contexto_atual = resposta_encontrada
-            return resposta_encontrada["texto"]
-        elif resposta_encontrada:
-            saudacao = ""
-            if self.primeira_mensagem:
-                saudacao = "Olá! Sou seu assistente virtual, pronto para ajudar.\n\n"
-                self.primeira_mensagem = False
-            
-            return f"{saudacao}{resposta_encontrada}"
-        else:
-            return "Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?"
-    
     def adicionar_mensagem(self, texto, is_user=False):
-        nova_mensagem = ChatMessage(text=str(texto), is_user=is_user)
-        self.root.ids.historico_chat.add_widget(nova_mensagem)
-        Clock.schedule_once(self.rolar_para_o_final, 0.1)
+        # ... (esta função continua igual)
+        container = MDBoxLayout(adaptive_height=True)
+        novo_balao = ChatMessage(text=str(texto), is_user=is_user)
+        if is_user:
+            container.pos_hint = {'right': 1}
+        else:
+            container.pos_hint = {'left': 1}
+        container.add_widget(novo_balao)
+        self.root.ids.historico_chat.add_widget(container)
+        Clock.schedule_once(lambda dt: self.rolar_para_o_final(), 0.1)
 
-    def rolar_para_o_final(self, dt):
-        self.root.ids.historico_chat_scroll.y = 0
+    def rolar_para_o_final(self):
+        self.root.ids.historico_chat_scroll.scroll_y = 0
 
     def salvar_log(self, entrada_usuario, resposta_final):
+        # ... (esta função continua igual)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         with open('historico_conversas.txt', 'a', encoding='utf-8') as f:
             f.write(f"[{timestamp}] Você: {entrada_usuario}\n")

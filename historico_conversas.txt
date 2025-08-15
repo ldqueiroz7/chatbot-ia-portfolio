@@ -414,3 +414,97 @@ Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os process
 
 Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?
 ---
+[2025-08-14 18:44:02] Você: o que é terminal?
+[2025-08-14 18:44:02] Assistente: Olá! Sou seu assistente virtual, pronto para ajudar.
+
+**Limpeza Terminal (Definição ANVISA):**
+
+É uma limpeza **completa e profunda** realizada no quarto **após a desocupação** do leito (por alta, transferência ou óbito do paciente).
+
+**Objetivo:** Desinfetar **todas** as superfícies do ambiente (piso, paredes, janelas, teto, banheiro, mobiliário) para quebrar a cadeia de infecção e preparar o quarto de forma segura para o próximo paciente. É um procedimento muito mais abrangente que a limpeza concorrente.
+---
+[2025-08-14 18:44:22] Você: como iniciar a limpeza no tablet
+[2025-08-14 18:44:22] Assistente: **Passo 2: Iniciar a Limpeza no App**
+Após o login, **selecione** o setor em que você está. Uma lista de leitos aparecerá. **Encontre** o número do leito que você irá limpar e **clique** no botão 'Iniciar Leito' ao lado dele.
+---
+[2025-08-14 18:44:36] Você: folga
+[2025-08-14 18:44:36] Assistente: Para dúvidas sobre férias, agendamento de folgas ou a política de descanso, por favor, converse diretamente com sua encarregada geral ou com o departamento de Recursos Humanos.
+---
+[2025-08-14 18:44:50] Você: reembolso
+[2025-08-14 18:44:50] Assistente: Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 18:44:57] Você: sair
+[2025-08-14 18:44:57] Assistente: Desculpe, não encontrei uma resposta para isso. Poderia tentar reformular a pergunta?
+---
+[2025-08-14 20:41:44] Você: Olá
+[2025-08-14 20:41:44] Assistente: Erro: Nenhuma base de conhecimento (arquivos .txt) foi encontrada.
+---
+[2025-08-14 21:08:34] Você: Olá
+[2025-08-14 21:08:34] Assistente: Erro: Nenhuma base de conhecimento (arquivos .txt) foi encontrada. Certifique-se de que os arquivos de conhecimento estão na mesma pasta.
+---
+[2025-08-14 21:08:51] Você: Pesquise no scielo
+[2025-08-14 21:08:51] Assistente: Erro: Nenhuma base de conhecimento (arquivos .txt) foi encontrada. Certifique-se de que os arquivos de conhecimento estão na mesma pasta.
+---
+[2025-08-14 21:11:38] Você: o que é hipertensão?
+[2025-08-14 21:11:38] Assistente: Hipertensão arterial é uma doença crônica caracterizada por níveis elevados de pressão sanguínea nas artérias. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:11:53] Você: pesquise no scielo sobre novos tratamentos para diabetes
+[2025-08-14 21:11:53] Assistente: Encontrei os seguintes resultados na web para você:
+
+1. **Sobre - Dicio, Dicionário Online de Português**
+   - Link: https://www.dicio.com.br/sobre/
+
+2. **Sob ou Sobre: quando usar? - Toda Matéria**
+   - Link: https://www.todamateria.com.br/sob-ou-sobre/
+
+3. **Sinônimo de Sobre - Sinônimos**
+   - Link: https://www.sinonimos.com.br/sobre/
+
+
+---
+[2025-08-14 21:22:15] Você: pesquise no scielo sobre novos tratamentos para diabetes
+[2025-08-14 21:22:15] Assistente: Desculpe, não encontrei resultados para sua pesquisa.
+---
+[2025-08-14 21:22:28] Você: O que é diabetes do tipo 2?
+[2025-08-14 21:22:28] Assistente: O diabetes tipo 2 é uma doença crônica que afeta a forma como o corpo metaboliza a glicose. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:22:39] Você: o que eh hipertensao
+[2025-08-14 21:22:39] Assistente: Hipertensão arterial é uma doença crônica caracterizada por níveis elevados da pressão sanguínea nas artérias. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:23:13] Você: tratamento para diabetes
+[2025-08-14 21:23:13] Assistente: A informação sobre tratamento para diabetes não foi encontrada nos artigos pesquisados. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:23:29] Você: pesquise no scielo diabetez
+[2025-08-14 21:23:29] Assistente: A informação solicitada não foi encontrada nos artigos pesquisados. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:26:58] Você: tratamento para diabetes
+[2025-08-14 21:26:58] Assistente: A informação fornecida define o diabetes tipo 2 como uma doença crônica que afeta o metabolismo da glicose, mas não detalha seu tratamento.  Informações sobre o tratamento para diabetes não foram encontradas no material de referência. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:27:21] Você: pesquise no scielo sobre diabetes
+[2025-08-14 21:27:21] Assistente: A informação solicitada não foi encontrada no material de referência. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:30:54] Você: tratamento para diabetes
+[2025-08-14 21:30:54] Assistente: A informação fornecida define o diabetes tipo 2, mas não detalha seu tratamento.  Mais informações são necessárias para responder completamente à pergunta. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:37:52] Você: tratamento para diabetes
+[2025-08-14 21:37:52] Assistente: A informação fornecida define o diabetes tipo 2 como uma doença crônica que afeta o metabolismo da glicose, mas não detalha seu tratamento.  Mais informações são necessárias para responder completamente à sua pergunta. Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:38:10] Você: pesquise no scielo sobre diabetes
+[2025-08-14 21:38:10] Assistente: De acordo com o estudo fornecido, a prevalência de diabetes mellitus no Brasil em 2012 foi de 9,2% (modelo multinomial) e 9,4% na Pesquisa Nacional de Saúde corrigida (autodeclaração + alteração na hemoglobina glicosilada - HbA1c ≥ 6,5).  Houve uma subnotificação de 42,5% no país, chegando a 72,8% na região Norte.  Mais da metade dos diagnosticados apresentaram HbA1c ≥ 6,5.  A realização de exames de fundo de olho foi insuficiente (40%), assim como o exame dos pés (30%), o que contribui para complicações como retinopatia e amputações. Cerca de 80% dos diabéticos utilizavam medicamentos, indicando uma parcela significativa sem tratamento. Deficiências na atenção à saúde levaram a maior morbidade, internações (15%) e visitas a emergências (27%).  Esta é uma informação educacional e não substitui uma consulta médica.
+
+---
+[2025-08-14 21:38:47] Você: pesquise o tratamento para diabetes
+[2025-08-14 21:38:47] Assistente: Desculpe, tive um problema ao tentar pesquisar na web.
+---
+[2025-08-14 21:39:10] Você: pesquise no scielo tratamentos para diabetes
+[2025-08-14 21:39:10] Assistente: Desculpe, tive um problema ao tentar pesquisar na web.
+---

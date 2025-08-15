@@ -1,47 +1,35 @@
-<ChatMessage>:
+<ChatMessage@MDCard>:
     size_hint_y: None
-    height: card.height
-    padding: [10, 5]
-    anchor_x: 'right' if root.is_user else 'left' 
+    height: self.minimum_height
+    padding: "12dp"
+    md_bg_color: (0.25, 0.25, 0.25, 1) if root.is_user else (0.94, 0.94, 0.94, 1)
+    radius: [15, 15, 0, 15] if root.is_user else [15, 15, 15, 0]
+    elevation: 1
 
-    MDCard:
-        id: card
-        size_hint: None, None
-        width: root.width * 0.75
-        height: self.minimum_height
-        padding: "12dp" # Um pouco mais de preenchimento interno
-        
-        # --- MUDANÇA PRINCIPAL NAS CORES ---
-        # Se for usuário -> cinza escuro. Se for o bot -> cinza bem claro.
-        md_bg_color: (0.25, 0.25, 0.25, 1) if root.is_user else (0.94, 0.94, 0.94, 1)
-        
-        radius: [15, 15, (0, 15)[root.is_user], 15]
-        elevation: 1 # Uma sombra mais sutil
-
-        MDLabel:
-            text: root.text
-            size_hint_y: None
-            height: self.texture_size[1]
-            text_size: (self.width, None)
-            theme_text_color: "Custom"
-            
-            # --- MUDANÇA NA COR DO TEXTO ---
-            # Se for usuário -> branco. Se for o bot -> preto.
-            text_color: (1, 1, 1, 1) if root.is_user else (0, 0, 0, 1)
+    MDLabel:
+        text: root.text
+        size_hint_y: None
+        height: self.texture_size[1]
+        text_size: (self.width, None)
+        theme_text_color: "Custom"
+        text_color: (1, 1, 1, 1) if root.is_user else (0, 0, 0, 1)
 
 BoxLayout:
     orientation: 'vertical'
 
     MDTopAppBar:
-        title: "Assistente de Suporte"
-        elevation: 2 # Sombra mais sutil
+        title: "Assistente Clínico"
+        elevation: 2
         md_bg_color: app.theme_cls.primary_color
 
     ScrollView:
         id: historico_chat_scroll
         bar_width: '10dp'
-        MDList:
+        GridLayout:
             id: historico_chat
+            cols: 1
+            size_hint_y: None
+            height: self.minimum_height
             padding: "10dp"
             spacing: "15dp"
 
@@ -54,16 +42,16 @@ BoxLayout:
         height: "60dp"
         padding: "10dp"
         spacing: "10dp"
-
         MDTextField:
             id: caixa_de_texto
-            hint_text: 'Sua mensagem'
+            hint_text: 'Faça uma pergunta...'
             mode: "fill"
             fill_color_normal: (0.9, 0.9, 0.9, 1)
+            text_color_normal: (0.25, 0.25, 0.25, 1)
+            text_color_focus: (0.25, 0.25, 0.25, 1)
             on_text_validate: app.enviar_mensagem()
-
         MDIconButton:
             icon: 'send-circle'
             theme_text_color: "Custom"
-            text_color: app.theme_cls.primary_color # O botão de enviar usará a cor do tema
+            text_color: app.theme_cls.primary_color
             on_press: app.enviar_mensagem()

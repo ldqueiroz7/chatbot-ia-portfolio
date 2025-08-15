@@ -1,98 +1,105 @@
-import difflib
+import os
+import google.generativeai as genai
+from dotenv import load_dotenv
+from duckduckgo_search import DDGS
+import requests
+from bs4 import BeautifulSoup
 
-BASE_DE_CONHECIMENTO = {
-    "saudacao": {
-        "chaves": ("olá", "oi", "bom dia", "boa tarde", "boa noite", "e aí"),
-        "resposta": "Olá! Sou o assistente de suporte virtual. Meu objetivo é ajudar com os processos do dia a dia. Como posso te ajudar hoje?"
-    },
-    "tutorial_completo": {
-        "chaves": ("tutorial", "completo", "tudo", "todos", "passos", "não sei", "guia", "procedimento", "iniciar e finalizar"),
-        "resposta": ("Com certeza! Aqui está o guia completo do processo de limpeza do início ao fim:\n\n"
-                     "**1. Login no Aplicativo**\n"
-                     "Primeiro, **abra** o app 'Higienização de Leitos' no seu tablet. **Use** seu usuário (nome abreviado + último nome) e a senha padrão (123456789) para **entrar**.\n\n"
-                     "**2. Iniciar a Tarefa**\n"
-                     "Dentro do app, **vá até** o setor correto. **Encontre** o leito que você irá higienizar e **clique** em 'Iniciar Leito'. Isso é muito importante para que o sistema saiba que o quarto está em manutenção.\n\n"
-                     "**3. O Processo de Limpeza**\n"
-                     "Agora, **execute** todo o procedimento de limpeza e higienização do quarto e do leito, seguindo os padrões de qualidade e segurança estabelecidos.\n\n"
-                     "**4. Finalizar a Tarefa**\n"
-                     "**ATENÇÃO:** Somente após ter terminado 100% da limpeza física, **volte** ao aplicativo. **Clique** na aba 'Em Limpeza' para ver suas tarefas ativas. **Encontre** o leito correspondente e **clique** em 'Finalizar Limpeza'.\n\n"
-                     "Pronto! O leito será liberado no sistema como disponível.")
-    },
-    "passo_1": {
-        "chaves": ("passo 1", "etapa 1", "primeiro passo", "login"),
-        "resposta": ("**Passo 1: Login**\n"
-                     "Para fazer o login, **abra** o aplicativo 'Higienização de Leitos' no menu do tablet. Seu usuário é o seu **nome abreviado + último nome completo** (ex: J. Silva). A senha padrão para o primeiro acesso é **123456789**. Se tiver problemas para entrar, procure sua encarregada.")
-    },
-    "passo_2": {
-        "chaves": ("passo 2", "etapa 2", "segundo passo", "iniciar", "começar"),
-        "resposta": ("**Passo 2: Iniciar a Limpeza no App**\n"
-                     "Após o login, **selecione** o setor em que você está. Uma lista de leitos aparecerá. **Encontre** o número do leito que você irá limpar e **clique** no botão 'Iniciar Leito' ao lado dele.")
-    },
-    "passo_4": {
-        "chaves": ("passo 4", "etapa 4", "quarto passo", "finalizar", "terminar", "concluir"),
-        "resposta": ("**Passo 4: Finalizar a Limpeza no App**\n"
-                     "Este passo é crucial e só deve ser feito com a limpeza física já concluída. **Clique** na aba superior que diz 'Aguardando Limpeza' e **mude** para a visualização 'Em Limpeza'. Lá estarão todos os leitos que você iniciou. **Encontre** o leito correto e **clique** em 'Finalizar Limpeza' para liberá-lo no sistema.")
-    },
-    "processo_contexto": {
-        "chaves": ("processo", "etapa"),
-        "resposta": {
-            "tipo": "pergunta_contexto",
-            "texto": "Claro. O processo tem as etapas principais de 'iniciar' (passo 2) e 'finalizar' (passo 4) no aplicativo. Sobre qual delas você quer mais detalhes?",
-            "contexto_novo": "aguardando_processo",
-            "opcoes": ["passo_2", "passo_4"]
-        }
-    },
-    "ferias": {
-        "chaves": ("férias", "descanso", "folga", "politica"),
-        "resposta": "Para dúvidas sobre férias, agendamento de folgas ou a política de descanso, por favor, converse diretamente com sua encarregada geral ou com o departamento de Recursos Humanos."
-    },
-    "limpeza_terminal": {
+# --- CONFIGURAÇÃO INICIAL (continua a mesma) ---
+load_dotenv()
+api_key = os.getenv('GOOGLE_API_KEY')
+if not api_key:
+    raise ValueError("A chave GOOGLE_API_KEY não foi encontrada.")
+genai.configure(api_key=api_key)
+try:
+    print("Inicializando modelo Gemini...")
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    print("Modelo carregado com sucesso!")
+except Exception as e:
+    print(f"ERRO: Não foi possível inicializar o modelo Gemini. Erro: {e}")
+    model = None
 
-        "chaves": ("terminal", "limpeza terminal", "higienização terminal", "limpeza final"),
+# --- FUNÇÕES DE FERRAMENTA ---
 
-        "resposta": ("**Limpeza Terminal (Definição ANVISA):**\n\n"
+def obter_conhecimento_interno():
+    """Lê todos os arquivos .txt do diretório e os concatena."""
+    conhecimento = ""
+    for nome_arquivo in os.listdir('.'):
+        if nome_arquivo.endswith('.txt') and nome_arquivo not in ['requirements.txt', 'historico_conversas.txt']:
+            with open(nome_arquivo, 'r', encoding='utf-8') as f:
+                conhecimento += f.read() + "\n\n"
+    return conhecimento
 
-                     "É uma limpeza **completa e profunda** realizada no quarto **após a desocupação** do leito (por alta, transferência ou óbito do paciente).\n\n"
-
-                     "**Objetivo:** Desinfetar **todas** as superfícies do ambiente (piso, paredes, janelas, teto, banheiro, mobiliário) para quebrar a cadeia de infecção e preparar o quarto de forma segura para o próximo paciente. É um procedimento muito mais abrangente que a limpeza concorrente.")
-
-    },
-     "limpeza_concorrente": {
-        "chaves": ("concorrente", "limpeza concorrente", "higienização concorrente"),
-        "resposta": ("**Limpeza Concorrente (Definição ANVISA):**\n\n"
-                     "É a limpeza realizada **diariamente** enquanto o leito está **ocupado** por um paciente.\n\n"
-                     "**Objetivo:** Manter a higiene do ambiente, remover poeira e sujidades, e controlar a proliferação de microrganismos, focando nas superfícies de maior contato (grades da cama, mesa de cabeceira, suporte de soro, etc.). É uma manutenção para o conforto e segurança do paciente durante sua estadia.")
-    },
-    
-}
-
-def encontrar_melhor_resposta(entrada_usuario):
-    entrada_formatada = entrada_usuario.lower()
-    palavras_usuario = set(entrada_formatada.split())
-    melhor_resposta = None
-    maior_pontuacao = 0
-
-    for intencao, dados in BASE_DE_CONHECIMENTO.items():
-        pontuacao_atual = 0
-        for chave in dados["chaves"]:
-            # Damos mais peso para frases com mais palavras
-            if " " in chave and chave in entrada_formatada:
-                pontuacao_atual += 2
-            elif chave in palavras_usuario:
-                pontuacao_atual += 1
+def pesquisar_e_resumir_web(query, pergunta_original):
+    """Pesquisa na web, extrai o conteúdo e retorna como contexto."""
+    try:
+        print(f"[DEBUG] Pesquisando na web por: {query}")
+        with DDGS() as ddgs:
+            resultados = [r for r in ddgs.text(query, max_results=1)]
+            if not resultados: return "Não encontrei resultados para a pesquisa."
         
-        if pontuacao_atual > maior_pontuacao:
-            maior_pontuacao = pontuacao_atual
-            melhor_resposta = dados["resposta"]
+        primeiro_link = resultados[0]['href']
+        print(f"[DEBUG] Lendo conteúdo de: {primeiro_link}")
 
-    if maior_pontuacao == 0:
-        todas_as_chaves_planas = [chave for dados in BASE_DE_CONHECIMENTO.values() for chave in dados["chaves"]]
-        for palavra in palavras_usuario:
-            correspondencias = difflib.get_close_matches(palavra, todas_as_chaves_planas, n=1, cutoff=0.8)
-            if correspondencias:
-                chave_corrigida = correspondencias[0]
-                for intencao, dados in BASE_DE_CONHECIMENTO.items():
-                    if chave_corrigida in dados["chaves"]:
-                        return dados["resposta"]
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = requests.get(primeiro_link, headers=headers, timeout=25)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        paragrafos = soup.find_all('p')
+        contexto_da_web = ' '.join([p.get_text() for p in paragrafos])
+        
+        contexto_limitado = contexto_da_web[:8000] if contexto_da_web else "Não consegui extrair conteúdo da página."
+        
+        # Agora que temos o contexto, chamamos a IA para gerar a resposta final
+        return gerar_resposta_com_base_no_contexto(pergunta_original, contexto_limitado)
 
-    return melhor_resposta
+    except Exception as e:
+        print(f"ERRO na pesquisa e resumo web: {e}")
+        return "Desculpe, tive um problema ao tentar pesquisar na web."
+
+def gerar_resposta_com_base_no_contexto(pergunta_usuario, contexto):
+    """Função central que recebe um contexto e gera a resposta final."""
+    prompt_final = (
+        "Você é um assistente de informações de saúde para estudantes. "
+        "Sintetize e responda a pergunta do usuário de forma clara e objetiva, usando como base APENAS as informações do contexto fornecido. "
+        "Se o contexto não for suficiente para responder, diga que a informação não foi encontrada no material de referência. "
+        "Sempre termine sua resposta com a frase: 'Esta é uma informação educacional e não substitui uma consulta médica.'\n\n"
+        f"--- CONTEXTO ---\n{contexto}\n"
+        f"--- PERGUNTA DO USUÁRIO ---\n{pergunta_usuario}\n\n"
+        "--- RESPOSTA ---\n"
+    )
+
+    try:
+        response_final = model.generate_content(prompt_final)
+        return response_final.text
+    except Exception as e:
+        print(f"Ocorreu um erro ao chamar a API do Gemini: {e}")
+        return "Desculpe, estou com problemas para processar sua solicitação final."
+
+# --- FUNÇÃO PRINCIPAL (O ORQUESTRADOR) ---
+
+def gerar_resposta_final(pergunta_usuario):
+    if model is None: return "Desculpe, o modelo de IA não está disponível."
+
+    # 1. IA DECIDE QUAL FERRAMENTA USAR
+    prompt_decisao = (
+        "Analise a pergunta do usuário. A resposta está provavelmente contida na nossa base de conhecimento sobre 'hipertensão' e 'diabetes', "
+        "ou o usuário está pedindo explicitamente uma pesquisa na web ou sobre um tópico novo? "
+        "Responda APENAS com 'BUSCA_INTERNA' ou 'PESQUISA_WEB'.\n\n"
+        f"Pergunta do usuário: '{pergunta_usuario}'"
+    )
+    response_decisao = model.generate_content(prompt_decisao)
+    ferramenta_escolhida = response_decisao.text.strip()
+    print(f"[DEBUG] Ferramenta escolhida pela IA: {ferramenta_escolhida}")
+
+    # 2. EXECUTA A FERRAMENTA ESCOLHIDA
+    if "BUSCA_INTERNA" in ferramenta_escolhida:
+        contexto = obter_conhecimento_interno()
+        if not contexto: return "Erro: Nenhuma base de conhecimento (.txt) foi encontrada."
+        return gerar_resposta_com_base_no_contexto(pergunta_usuario, contexto)
+    elif "PESQUISA_WEB" in ferramenta_escolhida:
+        # --- CORREÇÃO AQUI ---
+        # Garantimos que os dois argumentos são passados
+        return pesquisar_e_resumir_web(pergunta_usuario, pergunta_usuario)
+    else: # Fallback
+        contexto = obter_conhecimento_interno()
+        return gerar_resposta_com_base_no_contexto(pergunta_usuario, contexto)
