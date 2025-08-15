@@ -508,6 +508,7 @@ Após o login, **selecione** o setor em que você está. Uma lista de leitos apa
 [2025-08-14 21:39:10] Você: pesquise no scielo tratamentos para diabetes
 [2025-08-14 21:39:10] Assistente: Desculpe, tive um problema ao tentar pesquisar na web.
 ---
+<<<<<<< HEAD
 [2025-08-15 00:06:32] Você: o que´são diabetes
 [2025-08-15 00:06:32] Assistente: Diabetes Mellitus Tipo 2 é uma doença crônica que afeta a forma como o corpo metaboliza a glicose.  Esta é uma informação educacional e não substitui uma consulta médica.
 
@@ -621,3 +622,5 @@ Esta é uma informação educacional e não substitui uma consulta médica.
 
 Esta é uma informação educacional e não substitui uma consulta médica.
 ---
+=======
+>>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9

@@ -20,7 +20,11 @@ class ChatbotApp(MDApp):
         return None
 
     def on_start(self):
+<<<<<<< HEAD
         # A interface não precisa de estado, toda a inteligência está no cérebro
+=======
+        # A interface não precisa mais de estado de conversa
+>>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9
         pass
 
     def enviar_mensagem(self):
@@ -32,7 +36,11 @@ class ChatbotApp(MDApp):
         threading.Thread(target=self.processar_pergunta, args=(pergunta_usuario,)).start()
 
     def processar_pergunta(self, pergunta_usuario):
+<<<<<<< HEAD
         # A interface apenas chama a função principal do cérebro
+=======
+        # A lógica foi extremamente simplificada: apenas chama o orquestrador
+>>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9
         resposta_final = cerebro_chatbot.gerar_resposta_final(pergunta_usuario)
         Clock.schedule_once(lambda dt: self.atualizar_chat(resposta_final, pergunta_usuario))
 
@@ -42,6 +50,10 @@ class ChatbotApp(MDApp):
         self.salvar_log(pergunta_usuario, resposta_final)
 
     def adicionar_mensagem(self, texto, is_user=False):
+<<<<<<< HEAD
+=======
+        # ... (esta função continua igual)
+>>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9
         container = MDBoxLayout(adaptive_height=True)
         novo_balao = ChatMessage(text=str(texto), is_user=is_user)
         if is_user:
@@ -56,6 +68,10 @@ class ChatbotApp(MDApp):
         self.root.ids.historico_chat_scroll.scroll_y = 0
 
     def salvar_log(self, entrada_usuario, resposta_final):
+<<<<<<< HEAD
+=======
+        # ... (esta função continua igual)
+>>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         with open('historico_conversas.txt', 'a', encoding='utf-8') as f:
             f.write(f"[{timestamp}] Você: {entrada_usuario}\n")
