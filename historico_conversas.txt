@@ -611,3 +611,13 @@ Esta é uma informação educacional e não substitui uma consulta médica.
 
 Esta é uma informação educacional e não substitui uma consulta médica.
 ---
+[2025-08-15 03:57:24] Você: diabetes
+[2025-08-15 03:57:24] Assistente: O diabetes tipo 2 é uma doença crônica que afeta a forma como o corpo metaboliza a glicose.
+
+Esta é uma informação educacional e não substitui uma consulta médica.
+---
+[2025-08-15 03:57:35] Você: hipertensao
+[2025-08-15 03:57:35] Assistente: A hipertensão arterial é uma doença crônica caracterizada pelos níveis elevados da pressão sanguínea nas artérias.
+
+Esta é uma informação educacional e não substitui uma consulta médica.
+---
