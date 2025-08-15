@@ -624,3 +624,8 @@ Esta é uma informação educacional e não substitui uma consulta médica.
 ---
 =======
 >>>>>>> 1f89302b9d37df382fd3591da0bd06cc96eb4df9
+[2025-08-15 04:39:30] Você: diabetes
+[2025-08-15 04:39:30] Assistente: O diabetes tipo 2 é uma doença crônica que afeta a forma como o corpo metaboliza a glicose.
+
+Esta é uma informação educacional e não substitui uma consulta médica.
+---
